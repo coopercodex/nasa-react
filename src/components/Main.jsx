@@ -1,11 +1,10 @@
-import React from 'react'
-
+import React from "react"
 
 const Main = () => {
   return (
-    <div>
-      <img src='mars.png' alt='planet-mars'/>
-    </div>
+  <div className="imgContainer">
+    <img src="mars.png" alt="planet-mars" className="bgImage" />
+  </div>
   )
 }
 
