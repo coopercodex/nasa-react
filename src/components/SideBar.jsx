@@ -1,9 +1,10 @@
 import React from 'react'
 
-const SideBar = () => {
+const SideBar = ({handleToggleModal}) => {
+
   return (
     <div className='sidebar'>
-      <div className='bgOverlay'> </div>
+      <div onClick={handleToggleModal} className='bgOverlay'> </div>
       <div className="sidebarContents">
       <h2>The Brutal Martian Landscape</h2>
       <div>
@@ -11,7 +12,7 @@ const SideBar = () => {
       <p>asdfasdf</p>
       <p>asdfasd</p>
       </div>
-      <button><i className="fa-solid fa-arrow-right"></i></button>
+      <button onClick={handleToggleModal}><i className="fa-solid fa-arrow-right"></i></button>
       </div>
     </div>
   )
